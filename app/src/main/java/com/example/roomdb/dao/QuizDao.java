@@ -13,6 +13,12 @@ public interface QuizDao {
     @Query("SELECT * FROM quiz")
     List<Quiz> getAll();
 
+    @Query("SELECT * FROM quiz WHERE quiz_id = :quiz_id")
+    Quiz getQuiz(int quiz_id);
+
     @Insert
     void insert(Quiz quiz);
+
+    @Query("DELETE FROM quiz")
+    void deleteAll();
 }

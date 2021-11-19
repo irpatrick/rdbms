@@ -9,15 +9,21 @@ import androidx.room.Transaction;
 import java.util.List;
 
 import com.example.roomdb.model.Student;
-import com.example.roomdb.model.StudentWithQuiz;
 
 @Dao
 public interface StudentDao {
-    @Transaction
+
     @Query("SELECT * FROM student")
-    List<StudentWithQuiz> getStudentWithQuiz();
+    List<Student> getAll();
+
+
+    @Query("SELECT * FROM student WHERE student_id = :student_id")
+    Student getStudent(int student_id);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Student student);
+
+    @Query("DELETE FROM student")
+    void deleteAll();
 
 }

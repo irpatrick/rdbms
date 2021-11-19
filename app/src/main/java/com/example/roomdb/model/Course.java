@@ -16,7 +16,8 @@ public class Course {
 
 
     public Course(){
-        this("Empty course-"+new Random().nextInt());
+
+        this("RandomName-"+new Random().nextInt());
     }
     public Course(String course){
         courseName = course;
