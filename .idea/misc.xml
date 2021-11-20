@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Hp/AndroidStudioProjects/RoomDB/app/src/main/res/layout/activity_course.xml" value="0.18" />
         <entry key="..\:/Users/Hp/AndroidStudioProjects/RoomDB/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Hp/AndroidStudioProjects/RoomDB/app/src/main/res/layout/row.xml" value="0.1" />
+        <entry key="..\:/Users/Hp/AndroidStudioProjects/RoomDB/app/src/main/res/layout/row_view.xml" value="0.22" />
       </map>
     </option>
   </component>
